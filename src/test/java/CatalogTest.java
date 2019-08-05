@@ -23,13 +23,6 @@ public class CatalogTest {
         Catalog catalog = gson.fromJson(allText, Catalog.class);
         Catalog catalog1 = new Catalog("Унитаз Lavinia Boho One Rimless 3302004R","подвесной, без бачка, горизонтальный выпуск, с сиденьем", 429.00, 449.00, "Изделие оснащено ультратонким сидением дюропласт с функцией плавного опускания и быстросъемным механизмом", 2019,true,false);
         assertEquals(catalog.name,catalog1.name);
-        assertEquals(catalog.description,catalog1.description);
-        assertEquals(catalog.minPrice,catalog1.minPrice);
-        assertEquals(catalog.maxPrice,catalog1.maxPrice);
-        assertEquals(catalog.additional,catalog1.additional);
-        assertEquals(catalog.date,catalog1.date);
-        assertEquals(catalog.beInUse,catalog1.beInUse);
-        assertEquals(catalog.waterBox,catalog1.waterBox);
         driver.quit();
 
     }
